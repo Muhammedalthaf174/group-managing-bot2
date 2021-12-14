@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hello {}, my name is {}! I am an admin bot managed by [vaishnav](tg://user?id={}). I am one of the most popular group managers.
+Hello {}, my name is {}! I am an admin bot managed by [Althaf](tg://user?id={}). I am one of the most popular group managers.
 
 Join my group to ask doubts regarding me.
 
@@ -150,7 +150,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text= "➕️Add me to your chat➕️", url="t.me/{}?startgroup=true".format(bot.username))],
                      [InlineKeyboardButton(text= "Updates", url="https://t.me/dianasupport"), InlineKeyboardButton(text="Support group", url="https://t.me/keralabots")],
-                     [InlineKeyboardButton(text= " developer", url="https://t.me/vaishnavgr8"), InlineKeyboardButton(text= "Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                     [InlineKeyboardButton(text= " developer", url="https://t.me/Althafser"), InlineKeyboardButton(text= "Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
         update.effective_message.reply_text("Still alive...")
